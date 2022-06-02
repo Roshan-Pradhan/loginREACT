@@ -1,0 +1,35 @@
+@import "antd/dist/antd.css";
+
+.brand-logo {
+  margin-left: 20px;
+  text-decoration: none;
+}
+.Link {
+  text-decoration: none;
+}
+.Body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 260px;
+}
+.Buttonss {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #455a64;
+  color: white;
+  font-weight: bold;
+}
+
+.Buttonss:hover {
+  background-color: #455a64;
+  opacity: 0.8;
+  color: white;
+}
+
+.myForm {
+  margin-top: 80px;
+}
