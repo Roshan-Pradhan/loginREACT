@@ -1,5 +1,8 @@
 @import "antd/dist/antd.css";
 
+body {
+  overflow: hidden;
+}
 .brand-logo {
   margin-left: 20px;
   text-decoration: none;
@@ -32,4 +35,85 @@
 
 .myForm {
   margin-top: 80px;
+}
+
+.dashbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eceff1;
+  width: 100%;
+  height: 100vh;
+}
+
+.headerGrid {
+  grid-area: header;
+}
+.sidebarGrid {
+  grid-area: sidebar;
+}
+.midGrid {
+  grid-area: body;
+}
+.footGrid {
+  grid-area: footer;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "sidebar body body body body body"
+    "footer footer footer footer footer footer";
+  gap: 10px;
+  /* background-color: #2196f3; */
+  width: 80%;
+  margin-top: -50px;
+}
+.mainContainer > div {
+  background-color: #eceff1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+.mainContainer .headerGrid {
+  padding: 10px;
+}
+.mainContainer .footGrid {
+  padding: 10px;
+}
+.sidebarGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sidebars {
+  color: white;
+  text-decoration: none;
+  background-color: #455a64;
+  width: 120px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 2px;
+}
+
+.midGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+}
+.midcard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #455a64;
+  border-radius: 8px;
+  padding: 20px 28px;
+}
+.cardTect {
+  color: white;
 }

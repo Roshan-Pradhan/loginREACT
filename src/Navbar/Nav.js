@@ -21,8 +21,13 @@ const Nav = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" className="Link">
+              <Link to="/signin" className="Link">
                 SignIn
+              </Link>
+            </li>
+            <li>
+              <Link to="/dash" className="Link">
+                Dashboard
               </Link>
             </li>
           </ul>
